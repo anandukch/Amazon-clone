@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto; /*margin to be same both side*/
+  margin-right: auto;
+  max-width: 1220px;
+}
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.home__image {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+@media screen and (max-width: 500px) {
+  .home {
+    min-width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .home__row {
+    flex-direction: column;
+    margin-left:auto ;
+    margin-right: auto;
+    width: 299px;
+    align-items: center;
+  }
+  .home__image {
+    margin-bottom: -78px;
+  }
+}
